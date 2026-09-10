@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cliente__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Relaciona la cita con el cliente (Account) que la ha reservado.</description>
+    <inlineHelpText>Selecciona el cliente al que pertenece la cita.</inlineHelpText>
+    <label>Cliente</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Citas</relationshipLabel>
+    <relationshipName>Citas</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
