@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_Cita_No_Pasada</fullName>
+    <active>true</active>
+    <description>Impide guardar una cita con una fecha y hora anteriores al momento actual.</description>
+    <errorConditionFormula>AND(
+     OR(
+        ISNEW() ,
+			  		 ISCHANGED(Fecha_Hora__c) 
+      	), 	
+					 Fecha_Hora__c  &lt;  NOW() 		
+	)</errorConditionFormula>
+    <errorDisplayField>Fecha_Hora__c</errorDisplayField>
+    <errorMessage>La fecha y hora de la cita no pueden ser anteriores al momento actual.</errorMessage>
+</ValidationRule>

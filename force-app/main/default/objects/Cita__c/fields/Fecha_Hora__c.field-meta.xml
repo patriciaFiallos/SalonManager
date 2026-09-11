@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fecha_Hora__c</fullName>
+    <description>Fecha y hora programadas para la cita.</description>
+    <inlineHelpText>Indica la fecha y hora en la que se realizará la cita.</inlineHelpText>
+    <label>Fecha y Hora</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>
